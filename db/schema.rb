@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20161229123650) do
 
   create_table "urls", force: :cascade do |t|
     t.string   "uri"
-    t.string   "name"
+    t.string   "title"
     t.decimal  "price"
     t.string   "walmart_id"
     t.datetime "created_at", null: false

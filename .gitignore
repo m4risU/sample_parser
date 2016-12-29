@@ -21,4 +21,5 @@
 .byebug_history
 
 .ruby-gemset
+.rspec
 config/database.yml

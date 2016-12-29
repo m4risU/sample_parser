@@ -35,8 +35,9 @@ RSpec.configure do |config|
   WebMock.disable_net_connect!(:allow_localhost => true)
 
   VCR.configure do |c|
-    c.cassette_library_dir = 'fixtures/.cassettes'
+    c.cassette_library_dir = 'spec/factories/cassettes'
     c.hook_into :webmock
+    c.configure_rspec_metadata!
   end
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

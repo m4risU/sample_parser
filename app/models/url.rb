@@ -1,8 +1,11 @@
 class Url < ApplicationRecord
 
+  MissingUri = Class.new(StandardError)
+
   after_create :process_parser
 
   def process_parser
-    open(uri, allow_redirect: :safe)
+    raise MissingUri unless uri
+    open(uri, allow_redirections: :safe)
   end
 end

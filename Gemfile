@@ -26,6 +26,7 @@ gem 'puma', '~> 3.0'
 # gem 'rack-cors'
 
 gem 'nokogiri', '1.7.0'
+gem 'open_uri_redirections'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
